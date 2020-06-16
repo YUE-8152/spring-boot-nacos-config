@@ -1,0 +1,16 @@
+nacos:
+  config:
+    bootstrap:
+      enable: true                 # 以bootstrap配置为主
+    server-addr: 127.0.0.1:8848    # Nacos服务地址
+    namespace: DEV                 # 命名空间
+    auto-refresh: true             # 自动刷新开启
+    username: nacos                # Nacos登录名
+    password: nacos                # Nacos登录密码
+    data-id: springboot-nacos-config   # 读取配置的标识id
+    group: DEV_GROUP               # 配置信息所属分组
+    type: yaml                     # 配置文件类型
+    max-retry: 10
+    config-retry-time: 2000
+    config-long-poll-timeout: 50000
+    enable-remote-sync-config: true
